@@ -1,0 +1,45 @@
+[
+    {
+        "model": "shopping_list.shoppinglist",
+        "pk": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3",
+        "fields": {
+            "name": "Market"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "379d31b7-42f5-4b35-ae3f-71557755ff67",
+        "fields": {
+            "name": "Milk",
+            "purchased": false,
+            "shopping_list": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "b74577bf-7bef-4d48-b582-89db3c3c7ded",
+        "fields": {
+            "name": "Chocolate",
+            "purchased": false,
+            "shopping_list": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "c291a42c-cb65-4b2c-ae63-88dd31863065",
+        "fields": {
+            "name": "Pineapple",
+            "purchased": false,
+            "shopping_list": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "c5bdd133-acf6-4b26-941e-8580e883db7a",
+        "fields": {
+            "name": "Broccoli",
+            "purchased": false,
+            "shopping_list": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3"
+        }
+    }
+]
