@@ -1,45 +1,70 @@
 [
     {
         "model": "shopping_list.shoppinglist",
-        "pk": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3",
+        "pk": "32e6ad4e-0993-4357-b66f-ff8fdcefa8bd",
         "fields": {
             "name": "Market"
         }
     },
     {
-        "model": "shopping_list.shoppingitem",
-        "pk": "379d31b7-42f5-4b35-ae3f-71557755ff67",
+        "model": "shopping_list.shoppinglist",
+        "pk": "89d93203-daa5-4333-b501-f00eaa4a7a27",
         "fields": {
-            "name": "Milk",
-            "purchased": false,
-            "shopping_list": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3"
+            "name": "Books"
         }
     },
     {
         "model": "shopping_list.shoppingitem",
-        "pk": "b74577bf-7bef-4d48-b582-89db3c3c7ded",
-        "fields": {
-            "name": "Chocolate",
-            "purchased": false,
-            "shopping_list": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3"
-        }
-    },
-    {
-        "model": "shopping_list.shoppingitem",
-        "pk": "c291a42c-cb65-4b2c-ae63-88dd31863065",
-        "fields": {
-            "name": "Pineapple",
-            "purchased": false,
-            "shopping_list": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3"
-        }
-    },
-    {
-        "model": "shopping_list.shoppingitem",
-        "pk": "c5bdd133-acf6-4b26-941e-8580e883db7a",
+        "pk": "215c1815-c459-4d48-9552-cefa5fbbea75",
         "fields": {
             "name": "Broccoli",
             "purchased": false,
-            "shopping_list": "4fa70ce2-f163-443b-a08b-eb775ed2e0b3"
+            "shopping_list": "32e6ad4e-0993-4357-b66f-ff8fdcefa8bd"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "a94f8619-4b10-46b6-a5e1-d0af0afc77a4",
+        "fields": {
+            "name": "Chocolate",
+            "purchased": false,
+            "shopping_list": "32e6ad4e-0993-4357-b66f-ff8fdcefa8bd"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "ac8b11ac-ac9e-4b55-a37b-a68488e80326",
+        "fields": {
+            "name": "Pineapple",
+            "purchased": false,
+            "shopping_list": "32e6ad4e-0993-4357-b66f-ff8fdcefa8bd"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "bc243759-4e22-43dc-a35a-f975d9410d35",
+        "fields": {
+            "name": "Cosmos & ranscendence",
+            "purchased": false,
+            "shopping_list": "89d93203-daa5-4333-b501-f00eaa4a7a27"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "c54d00af-142c-4bb5-b3fc-a99f7736c439",
+        "fields": {
+            "name": "Milk",
+            "purchased": false,
+            "shopping_list": "32e6ad4e-0993-4357-b66f-ff8fdcefa8bd"
+        }
+    },
+    {
+        "model": "shopping_list.shoppingitem",
+        "pk": "d24548d5-33b9-4e54-a210-dd94be312b3d",
+        "fields": {
+            "name": "Harry Potter",
+            "purchased": false,
+            "shopping_list": "89d93203-daa5-4333-b501-f00eaa4a7a27"
         }
     }
 ]
