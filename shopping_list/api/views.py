@@ -10,13 +10,15 @@ from shopping_list.models import ShoppingList, ShoppingItem
 
 
 class ListAddShoppingList(generics.ListCreateAPIView):
-    queryset = ShoppingList.objects.all()
     serializer_class = ShoppingListSerializer
 
     def perform_create(self, serializer):
         shopping_list = serializer.save()
         shopping_list.members.add(self.request.user)
         return shopping_list
+
+    def get_queryset(self):
+        return ShoppingList.objects.filter(members=self.request.user)
 
 
 class ShoppingListDetail(generics.RetrieveUpdateDestroyAPIView):

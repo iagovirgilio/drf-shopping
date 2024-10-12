@@ -36,20 +36,21 @@ def test_shopping_list_name_missing_returns_bad_request(create_user, create_auth
 
 
 @pytest.mark.django_db
-def test_all_shopping_lists_are_listed(create_user, create_authenticated_client, create_shopping_list_by_name):
+def test_client_retrieves_only_shopping_lists_they_are_member_of(create_user, create_authenticated_client, create_shopping_list_by_name):
+
     user = create_user()
     client = create_authenticated_client(user)
     create_shopping_list_by_name(name="Groceries", user=user)
-    create_shopping_list_by_name(name="Books", user=user)
+
+    another_user = User.objects.create_user("SomeoneElse", "someone@else.com", "something")
+    create_shopping_list_by_name(name="Books", user=another_user)
 
     url = reverse("all-shopping-lists")
 
     response = client.get(url)
 
-    assert response.status_code == status.HTTP_200_OK
-    assert len(response.data) == 2
+    assert len(response.data) == 1
     assert response.data[0]["name"] == "Groceries"
-    assert response.data[1]["name"] == "Books"
 
 
 @pytest.mark.django_db
